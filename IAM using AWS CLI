@@ -1,0 +1,30 @@
+To add a user to an IAM group:
+aws iam add-user-to-group --user-name Bob --group-name Admins
+
+To change the password for your IAM user:
+aws iam change-password --generate-cli-skeleton > change-password.json --> creates a JSON file called change-password.json
+aws iam change-password --cli-input-json file://change-password.json --> command uses the --cli-input-json parameter with a JSON file called change-password.json
+
+To create an access key for an IAM user:
+aws iam create-access-key --user-name Bob
+
+To create an IAM group:
+aws iam create-group --group-name Admins
+
+To create an IAM user:
+aws iam create-user --user-name Bob
+
+To delete an IAM group:
+aws iam delete-group --group-name MyTestGroup
+
+To delete an IAM user:
+aws iam delete-user --user-name Bob
+
+To list the IAM groups for the current account:
+aws iam list-groups
+
+To list IAM roles for the current account:
+aws iam list-roles
+
+To list IAM users:
+aws iam list-users
